@@ -1,0 +1,14 @@
+python manage.py test app.tests.test_BalanceCalculation
+                                test_BalanceOperationsTemplate --> missing
+                                test_BalanceOperationsView
+                                test_CreateUserView.py
+                                test_CurrencyExchangeTemplate
+                                test_CurrencyExchangeView --> missing, cannot convert string to float, maybe error handling is necessary
+python manage.py test app.tests.test_CurrencyParams
+                            test_CustomLoginView
+python manage.py test app.test_HistoryModelConstraints
+                          test_MainMenuTemplate
+                          test_MainMenuView                                              
+                          test_TransactionHistoryTemplate
+                          test_TransactionHistoryView
+                          

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand">Hello {{ username }}</span>
+        <a class="navbar-brand" href="{% url 'main_menu' %}">Main Menu</a>
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+    </nav>
+    <div class="container mt-5">
+        <h1>Main Menu</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'operations' %}" class="btn btn-primary">Balance Operations</a></li> 
+            <li class="list-group-item"><a href="{% url 'currency_exchange' %}"class="btn btn-primary">Curreny Exchange</a></li> 
+            <li class="list-group-item"><a href="{% url 'history' %}" class="btn btn-primary">View Transaction History</a></li> 
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
